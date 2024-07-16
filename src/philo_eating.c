@@ -6,7 +6,7 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 13:54:46 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/15 13:59:45 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/16 15:43:38 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,8 @@
 void	ft_philo_eating(t_arg *arg, t_philo *philo)
 {
 	pthread_mutex_lock(&arg->forks[philo->first_fork]);
-//	printf("first_fork = %d\n", philo->first_fork);
-//	printf("second_fork = %d\n", philo->second_fork);
 	ft_philo_print(arg, philo->id, "has taken a fork");
-	if (philo->first_fork != philo->second_fork)//per asegurar que hi ha mes de 1 philo
-//comprobar que realment es el mateix fork en el cas de 1 philo
+	if (philo->first_fork != philo->second_fork)
 	{
 		pthread_mutex_lock(&arg->forks[philo->second_fork]);
 		ft_philo_print(arg, philo->id, "has taken a fork");
@@ -30,6 +27,6 @@ void	ft_philo_eating(t_arg *arg, t_philo *philo)
 		pthread_mutex_unlock(&arg->forks[philo->second_fork]);
 	}
 	else
-		ft_pass_time(arg->time_to_die, arg);//si nomes hi ha 1 philo, s'esperara aqui fins a morir
+		ft_pass_time(arg->time_to_die, arg);
 	pthread_mutex_unlock(&arg->forks[philo->first_fork]);
 }

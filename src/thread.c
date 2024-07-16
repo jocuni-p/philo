@@ -6,7 +6,7 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 14:00:12 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/15 14:12:14 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/16 15:55:49 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	*ft_thread(void *argv)
 		usleep((arg->time_to_eat * 1000) - 500);
 	while (!ft_get_finish(arg))
 	{
-//		if (arg->target_meals > 0 && (philo->meals_count < arg->target_meals))
 		if (philo->meals_count < arg->target_meals)
 			ft_philo_eating(arg, philo);
 		if (philo->meals_count == arg->target_meals)

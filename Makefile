@@ -6,7 +6,7 @@
 #    By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/04 16:42:14 by jocuni-p          #+#    #+#              #
-#    Updated: 2024/07/15 14:01:28 by jocuni-p         ###   ########.fr        #
+#    Updated: 2024/07/16 15:53:09 by jocuni-p         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,8 +38,8 @@ DEP 	:=	$(addprefix $(OBJ_DIR)/, $(SRC:.c=.d))
 INCLUDE	:=	-I $(INC_DIR)
 RM		:=	rm -rf
 CC		:=	gcc
-CFLAGS	:=	-Wall -Werror -Wextra -pthread #-fsanitize=thread address
-#>OJO: -g y -fsanitize RALENTIZAN LA EJECUCION, SOLO USAR PARA BUSCAR FALLOS.
+CFLAGS	:=	-Wall -Werror -Wextra -pthread
+
 
 #************************RULES**************************
 
