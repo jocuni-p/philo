@@ -6,11 +6,15 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 11:39:26 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/13 14:13:26 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:13:11 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+/*Creates an array of 'philo' and initializes everyone. The even-numbered 
+philos take their fork and then that of the next philo. Odd-numbered threads
+ do it the other way around.*/
 
 int	ft_philo_init(t_arg *arg, t_philo **philo)
 {

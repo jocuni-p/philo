@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 16:24:12 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/13 14:19:19 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:22:36 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*Sets the value of a variable which is protected by mutexes*/
 void	ft_set_finish(t_arg *arg)
 {
 	pthread_mutex_lock(&arg->finish_mtx);

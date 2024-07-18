@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 17:53:32 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/15 14:11:36 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 22:58:32 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*Creates and initializes a 'forks' array and other mutexes*/
 static int	ft_arg_init_mutex(t_arg *arg)
 {
 	int	i;
@@ -39,7 +40,7 @@ static int	ft_arg_init_mutex(t_arg *arg)
 	return (0);
 }
 
-/*--Initializes all arg->variables and all elements of 'forks/mutex' array--*/
+/*--Initializes all arg struct and all mutexes--*/
 int	ft_arg_init(int argc, char *argv[], t_arg *arg)
 {
 	arg->num_of_philos = ft_atoi(argv[1]);

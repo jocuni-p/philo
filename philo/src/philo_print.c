@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:49:28 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/16 16:06:04 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:23:10 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*Prints the value of a variable which is protected by mutexes*/
 void	ft_philo_print(t_arg *arg, int id, char *str)
 {
 	unsigned long	now;

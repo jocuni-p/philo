@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 14:00:12 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/16 15:55:49 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:16:51 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*Starts the routine/life of every 'philo', eating, sleeping and thinking. */
 void	*ft_thread(void *argv)
 {
 	t_philo	*philo;

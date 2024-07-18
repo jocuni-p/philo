@@ -6,13 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 15:31:08 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/14 15:05:14 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:25:06 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-//Chequea si se han cumplido las comidas minimas o alguno ha muerto
+/*Check if the minimum meals have been reached or if any 'philo' has died*/
 void	ft_check_finish(t_arg *arg, t_philo *philo)
 {
 	int				i;

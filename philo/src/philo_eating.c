@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 13:54:46 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/16 15:43:38 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:19:13 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*The 'philo' eating action. All shared variables are protected by mutexes*/
 void	ft_philo_eating(t_arg *arg, t_philo *philo)
 {
 	pthread_mutex_lock(&arg->forks[philo->first_fork]);

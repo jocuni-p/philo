@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 14:47:12 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/13 14:12:14 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:20:07 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*Waits for a defined period of time*/
 void	ft_pass_time(unsigned long wait_time, t_arg *arg)
 {
 	unsigned long	start;

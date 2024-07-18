@@ -12,6 +12,8 @@
 
 #include "philo.h"
 
+/*Creates all threads, checks all the time if any of them has died and finaly
+joins all of them.*/
 int	ft_philo_start(t_arg *arg, t_philo *philo)
 {
 	int	i;

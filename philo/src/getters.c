@@ -6,12 +6,13 @@
 /*   By: jocuni-p <jocuni-p@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 16:24:29 by jocuni-p          #+#    #+#             */
-/*   Updated: 2024/07/13 14:19:55 by jocuni-p         ###   ########.fr       */
+/*   Updated: 2024/07/18 23:21:47 by jocuni-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*Gets the value of a variable which is protected by mutexes*/
 int	ft_get_finish(t_arg *arg)
 {
 	int	finish;
